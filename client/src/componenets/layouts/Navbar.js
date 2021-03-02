@@ -14,7 +14,7 @@ const Navbar = () => {
       <li style={{textAlign:"center"}}>Welcome, {user && user.name}</li>
       <span className="sm-hide"></span>
       <li>
-        <a href="#!" onClick={onLogout}>
+        <a href="" onClick={onLogout}>
           <span className="sm-hide">Logout</span>
         </a>
       </li>
