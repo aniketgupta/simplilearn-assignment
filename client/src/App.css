@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #043a5a;
+  --dark-color: #333;
+  --light-color: #f4f4f4;
+  --danger-color: #dc3545;
+  --success-color: #c0bfbd;
+  --xxx-color: #b5b8b7;
+}
+
+/**************Navbar ******************/
+
+.navbar, .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 2rem;
+  z-index: 1;
+  width: 100%;
+  color: var(--light-color);
+  background: #4568dc;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2a3e58, #2f8897);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2a3e58, #2f8897);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin-bottom: 1rem;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo p {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  color: #ccc;
+}
+
+.logo span {
+  color: rgb(255, 57, 22);
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar i, h1 {
+  padding: 0 1rem;
+}
+
+li {
+  list-style: none;
+  padding: 0 1rem;
+  transition: all 0.3s ease 0s;
+}
+
+a {
+  text-decoration: none;
+  color: var(--light-color);
+}
+
+li i:hover, a:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/* **************app ************************ */
+
+.app-container {
+  max-width: 90rem;
+  margin: auto;
+}
+
+/* ****************** Form************** */
+
+form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+form input[type="text"], form input[type="email"], form input[type="password"] {
+  border: none;
+  height: 2.5rem;
+  font-size: 1.2rem;
+  border-bottom: solid 1px gray;
+}
+
+form input[type="text"]:focus, form input[type="email"]:focus, form input[type="password"]:focus {
+  outline: none !important;
+  border-bottom: 1px solid var(--primary-color);
+}
+
+/************************************ register and login  ***************************/
+
+.register, .login {
+  color: var(--primary-color);
+  text-align: center;
+  width: 100%;
+  height: auto;
+  margin-left: 100%;
+  margin-top: 10%;
+}
+
+.clear {
+  position: absolute;
+  display: inline;
+  color: var(--primary-color);
+  background: rgb(189, 187, 187);
+  bottom: 0;
+  right: 0;
+}
+
+.question {
+  color: #333;
+  margin: 1.5rem 0;
+}
+
+.question a {
+  color: var(--primary-color);
+}
+
+.danger {
+  background-color: rgb(207, 58, 58);
+  width: 80%;
+  margin-bottom: 0.3rem;
+  margin-top: 0rem;
+  text-transform: capitalize;
+  padding: 0.5rem;
+  cursor: initial;
+  border: 1px solid black;
+  color: #fff;
+  font: inherit;
+}
+
+.danger span {
+  float: right;
+  cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  .register, .login {
+    width: 40%;
+  }
+}
+
+@media (max-width: 760px) {
+  .sm-hide {
+    display: none;
+  }
+  li {
+    padding: 0.2rem;
+  }
+  .register, .login {
+    width: 70%;
+  }
+  .navbar {
+    padding: 1rem 0;
+    font-size: 12px;
+  }
+  .navbar h1 {
+    font-size: 14px;
+  }
+}
