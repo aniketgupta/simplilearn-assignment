@@ -39,6 +39,5 @@ Create a .env file in the server root folder. Inside this file, the following va
 
 ### Who do I talk to? ###
 
-* pmdashboard@fissionlabs.com
 * aniket.gupta309@gmail.com
 * Other community or team contact
